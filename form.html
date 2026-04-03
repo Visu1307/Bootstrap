@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script> -->
+</head>
+
+<body class="bg-light">
+    <h1 class="text-center bg-info p-3 text-white">BS5 Forms</h1>
+    <form action="#" class="container mt-5">
+        <div class="row">
+            <h3 class="text-info">Job Application Form</h3>
+        </div>
+        <hr class="text-info border border-info border-3">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="my-3 form-floating">
+                    <input type="text" id="fnm" class="form-control" placeholder="First Name">
+                    <label for="fnm" class="fw-bold">First Name</label>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="my-3 form-floating">
+                    <input type="text" id="lnm" class="form-control" placeholder="Last Name">
+                    <label for="lnm" class="fw-bold">Last Name</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="my-3 form-floating">
+                    <input type="text" id="email" class="form-control" placeholder="Email">
+                    <label for="email" class="fw-bold">Email</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="my-3">
+                    <label for="designation" class="form-label fw-bold">What position you are applying?</label>
+                    <select id="designation" class="form-select">
+                        <option>Web Designer</option>
+                        <option>Full Stack Developer</option>
+                        <option>Product Analyst</option>
+                        <option>Sales Executive</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="my-3">
+                    <label for="availDate" class="form-label fw-bold">Available Date</label>
+                    <input type="date" id="availDate" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="my-3">
+                    <label for="employement" class="form-label fw-bold">What is your current employement status?</label>
+                    <br>
+                    <div class="form-check-inline">
+                        <input type="radio" name="employement" id="emp" class="form-check-input">
+                        <label for="emp" class="form-check-label">Employed</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input type="radio" name="employement" id="semp" class="form-check-input">
+                        <label for="semp" class="form-check-label">Self-Employed</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input type="radio" name="employement" id="uemp" class="form-check-input">
+                        <label for="uemp" class="form-check-label">Unemployed</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input type="radio" name="employement" id="std" class="form-check-input">
+                        <label for="std" class="form-check-label">Student</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="my-3">
+                    <label for="resume" class="form-label fw-bold">Upload Your Resume</label>
+                    <input type="file" id="resume" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="my-3">
+                    <label for="salary" class="form-label fw-bold">Provide Your Salary Expectation</label>
+                    <input type="range" id="salary" class="form-range">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="my-3 form-floating">
+                    <input type="text" id="company" class="form-control" value="RKIT Software Pvt. Ltd." disabled>
+                    <label for="company" class="fw-bold">Applying in</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="my-3">
+                    <button class="btn btn-lg btn-outline-dark">Reset</button>
+                    <button class="btn btn-lg btn-info text-white mx-3">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
