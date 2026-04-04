@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Controls</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1 class="bg-info text-white text-center p-3">Form Controls</h1>
+    <div class="container">
+        <h3 class="text-primary">Text Inputs Like</h3>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <hr class="border border-info border-2">
+        <h3 class="text-primary">Sizing</h3>
+        <p>Set heights using classes like <code>.form-control-lg</code> and <code>.form-control-sm.</code></p>
+        <div>
+            <input class="form-control form-control-lg my-3" type="text" placeholder=".form-control-lg"
+                aria-label=".form-control-lg example">
+            <input class="form-control my-3" type="text" placeholder="Default input" aria-label="default input example">
+            <input class="form-control form-control-sm my-3" type="text" placeholder=".form-control-sm"
+                aria-label=".form-control-sm example">
+        </div>
+        <hr class="border border-info border-2">
+        <h3 class="text-primary">Disabled</h3>
+        <p>Add the <code>disabled</code> boolean attribute on an input to give it a grayed out appearance and remove
+            pointer events.</p>
+        <input class="form-control my-3" type="text" placeholder="Disabled input" aria-label="Disabled input example"
+            disabled>
+        <input class="form-control my-3" type="text" value="Disabled readonly input" aria-label="Disabled input example"
+            disabled readonly>
+        <hr class="border border-info border-2">
+        <h3 class="text-primary">Readonly plain text</h3>
+        <p>If you want to have <code>&lt;input readonly&gt;</code> elements in your form styled as plain text, use the
+            <code>.form-control-plaintext</code> class to remove the default form field styling and preserve the correct
+            margin and
+            padding.
+        </p>
+        <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Read only Email</label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+            </div>
+            <label for="staticEmail" class="col-sm-2 col-form-label">Disabled Email</label>
+            <div class="col-sm-10">
+                <input type="text" disabled class="form-control-plaintext" id="staticEmail" value="email@example.com">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword">
+            </div>
+        </div>
+        <hr class="border border-info border-2">
+        <h3 class="text-primary">File</h3>
+        <p>You can provide enabled and disable file input like </p>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Default file input example</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="mb-3">
+            <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+            <input class="form-control" type="file" id="formFileDisabled" disabled>
+        </div>
+        <hr class="border border-info border-2">
+        <h3 class="text-primary">Color</h3>
+        <p><code>.form-control-color</code> is being used to provide color picker of bootstrap.</p>
+        <label for="exampleColorInput" class="form-label">Color picker</label>
+        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="blue"
+            title="Choose your color">
+        <hr class="border border-info border-2">
+        <h3 class="text-primary">Switches</h3>
+        <p>A switch has the markup of a custom checkbox but uses the<code>.form-check</code> and
+            <code>.form-switch</code> class to render a toggle
+            switch. Switches also support the disabled attribute.
+        </p>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+            <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox
+                input</label>
+        </div>
+        <hr class="border border-info border-2">
+        <h3 class="text-primary">Default (stacked)</h3>
+        <p>By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and
+            appropriately spaced with <code>.form-check</code>.</p>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+                Default checkbox
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+            <label class="form-check-label" for="defaultCheck2">
+                Disabled checkbox
+            </label>
+        </div>
+        <hr class="border border-info border-2">
+        <h3 class="text-primary">Inline</h3>
+        <p>Group checkboxes or radios on the same horizontal row by adding <code>.form-check-inline</code> after any
+            <code>.form-check</code>.</p>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+            <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+        </div>
+        <hr class="border border-info border-2">
+        <h3 class="text-primary">Input Group</h3>
+        <p>Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place <code> &lt;label&gt;s </code> outside the input group.</p>
+        <p><code>input-group</code> and <code>input-group-text</code> are used to create an effect like:</p>
+        <div class="my-3">
+            <label for="ingroup" class="form-label fw-bold">Enter Your Username</label>
+            <div class="input-group my-1">
+                <span class="input-group-text">@</span>
+                <input type="text" id="ingroup" class="form-control">
+            </div>
+            <label for="email" class="form-label fw-bold my-1">Enter Your Email</label>
+            <div class="input-group my-1">
+                <input type="text" id="email" class="form-control">
+                <span class="input-group-text">@rkitsoftware.com</span>
+            </div>
+            <label for="phno" class="form-label fw-bold">Enter Ph. No.</label>
+            <div class="input-group">
+                <select id="phno" class="input-group-text">
+                    <option>+91</option>
+                    <option>+91</option>
+                    <option>+93</option>
+                </select>
+                <input type="number" id="phno" class="form-control">
+            </div>
+        </div>
+        <hr class="border border-info border-2">
+    </div>
+</body>
+
+</html>

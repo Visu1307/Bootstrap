@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-sm-6">
+            <div class="col-12 col-sm-12 col-md-6">
                 <div class="my-3">
                     <label for="designation" class="form-label fw-bold">What position you are applying?</label>
                     <select id="designation" class="form-select">
@@ -50,10 +50,16 @@
                     </select>
                 </div>
             </div>
-            <div class="col-12 col-sm-6">
+            <div class="col-12 col-sm-6 col-md-3">
                 <div class="my-3">
                     <label for="availDate" class="form-label fw-bold">Available Date</label>
                     <input type="date" id="availDate" class="form-control">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="my-3">
+                    <label for="time" class="form-label fw-bold">Available Time</label>
+                    <input type="time" id="time" class="form-control">
                 </div>
             </div>
         </div>
@@ -96,18 +102,27 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col-12 col-sm-6">
                 <div class="my-3 form-floating">
                     <input type="text" id="company" class="form-control" value="RKIT Software Pvt. Ltd." disabled>
-                    <label for="company" class="fw-bold">Applying in</label>
+                    <label for="company" class="fw-bold">Applying at</label>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="my-3">
+                    <label for="company" class="fw-bold form-check-label">Are you flexible</label>
+                    <div class="form-check form-switch">
+                        <label for="workHours">working in different shifts?</label>
+                        <input type="checkbox" id="workHours" class="form-check-input" value="Yes" checked>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <div class="my-3">
-                    <button class="btn btn-lg btn-outline-dark">Reset</button>
-                    <button class="btn btn-lg btn-info text-white mx-3">Submit</button>
+                    <button class="btn btn-lg btn-info text-white">Submit</button>
+                    <button class="btn btn-lg btn-outline-dark mx-3">Reset</button>
                 </div>
             </div>
         </div>
