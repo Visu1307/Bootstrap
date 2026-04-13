@@ -25,7 +25,14 @@
   <div class="container mt-5">
     <h1 class="display-1 text-info">Hello Bootstrap</h1>
     <hr class="border border-info border-3">
-    <p class="fs-3">Topics covered so far</p>
+    <div class="row">
+      <div class="col">
+        <p class="fs-3">Topics covered so far</p>
+      </div>
+      <div class="col text-end">
+        <button id="toggleTopics" class="btn btn-lg btn-info text-white">Show All</button>
+      </div>
+    </div>
     <div class="accordion" id="accordionPanelsStayOpenExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -122,5 +129,37 @@
     </div>
   </div>
 </body>
+<script>
+  let flag = false
+  const topics = document.getElementById("toggleTopics")
+  const accBtn = document.getElementsByClassName("accordion-button")
+  const accordion = document.getElementsByClassName("accordion-collapse")
+  if (topics) {
+    topics.addEventListener("click", () => {
+      console.log(flag);
+      if (!flag) {
+        for (let index = 0; index < accBtn.length; index++) {
+          if (accBtn[index].classList[1] == "collapsed") {
+            accBtn[index].classList.remove("collapsed");
+            accordion[index].classList.remove("collapse");
+          }
+          topics.innerHTML = "Collapse All"
+        }
+        flag=true
+      }
+      else {
+        for (let index = 0; index < accBtn.length; index++) {
+          if (accBtn[index].classList[1] != "collapsed") {
+            accBtn[index].classList.add("collapsed");
+            accordion[index].classList.add("collapse");
+            accordion[index].classList.remove("show");
+          }
+          topics.innerHTML = "Show All"
+        }
+        flag=false
+      }
+    })
+  }
+</script>
 
 </html>
