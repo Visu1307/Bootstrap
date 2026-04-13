@@ -275,7 +275,8 @@
             <button type="button" class="btn btn-outline-secondary" disabled>Button</button>
         </div>
         <p class="mt-3"><code>disabled</code> has been added to button to disable state as well as
-            <code>pointer-event:none;</code></p>
+            <code>pointer-event:none;</code>
+        </p>
         <hr class="border border-3 border-info">
         <h3>Button Group</h3>
         <p>Default horizontal</p>
@@ -290,17 +291,699 @@
             <button type="button" class="btn btn-primary">Middle</button>
             <button type="button" class="btn btn-primary">Right</button>
         </div>
+        <hr class="border border-info border-3">
+        <h2 id="cards" class="bg-info text-white text-center p-3 mt-3">Cards</h2>
+        <p class="mt-3">Bootstrap’s cards provide a flexible and extensible content container with multiple variants and
+            options.</p>
+        <div class="card">
+            <div class="card-body">
+                <p>Hello World. This is card and card body basic building block of card.</p>
+            </div>
+        </div>
+        <p class="mt-3"><code>.card, .card-body, .card-title, .card-text</code> are used to create a fully functional
+            card.</p>
         <div class="row">
-            <hr class="border border-info border-3">
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/img1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Morning In Forest</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/img1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Morning In Forest</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/img1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Morning In Forest</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="mt-3">There are various different in-built classes of card such as : </p>
+        <p><code>.card-header, .card-footer, .card-subtitle</code> can be used to create max utility card.</p>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">White Flowers</div>
+                    <img src="img/img2.jpg" alt="Flowers" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Flowers</h5>
+                        <h6 class="card-subtitle text-muted">Nature</h6>
+                        <p class="card-text">This is the beautifull creation of nature. We all should embrace it.</p>
+                        <a href="#">Anchor Link</a>
+                        <a href="#">Click Me!</a>
+                        <ul class="list-group mt-3">
+                            <li class="list-group-item">First Item</li>
+                            <li class="list-group-item">Second Item</li>
+                            <li class="list-group-item">Third Item</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">Good to see you!</div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">White Flowers</div>
+                    <img src="img/img2.jpg" alt="Flowers" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Flowers</h5>
+                        <h6 class="card-subtitle text-muted">Nature</h6>
+                        <p class="card-text">This is the beautifull creation of nature. We all should embrace it.</p>
+                        <a href="#">Anchor Link</a>
+                        <a href="#">Click Me!</a>
+                        <ul class="list-group mt-3">
+                            <li class="list-group-item">First Item</li>
+                            <li class="list-group-item">Second Item</li>
+                            <li class="list-group-item">Third Item</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">Good to see you!</div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">White Flowers</div>
+                    <img src="img/img2.jpg" alt="Flowers" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Flowers</h5>
+                        <h6 class="card-subtitle text-muted">Nature</h6>
+                        <p class="card-text">This is the beautifull creation of nature. We all should embrace it.</p>
+                        <a href="#">Anchor Link</a>
+                        <a href="#">Click Me!</a>
+                        <ul class="list-group mt-3">
+                            <li class="list-group-item">First Item</li>
+                            <li class="list-group-item">Second Item</li>
+                            <li class="list-group-item">Third Item</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">Good to see you!</div>
+                </div>
+            </div>
+        </div>
+        <h3 class="my-3">We can change the position of image inside the card like</h3>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="img/img3.jpg" alt="Img Top" class="card-img-top">
+                    <div class="card-body">
+                        <h4>This text is below image</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4>This text is above image</h4>
+                    </div>
+                    <img src="img/img3.jpg" alt="Img Top" class="card-img-bottom">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="img/img3.jpg" alt="Img Top" class="card-img">
+                    <div class="card-img-overlay">
+                        <h4 class="text-white text-end">This text is inside image</h4>
+                    </div>
+                    <div class="card-body">
+                        <h4>This text is below image</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3>Colorfull Cards</h3>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Primary card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="card text-white bg-secondary mb-3">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Secondary card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Success card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="card text-white bg-danger mb-3">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Danger card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="my-3">Outlined Cards</h3>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="card border-primary mb-3">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-primary">
+                        <h5 class="card-title">Primary card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="card border-secondary mb-3">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-secondary">
+                        <h5 class="card-title">Secondary card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="card border-success mb-3">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-success">
+                        <h5 class="card-title">Success card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="card border-danger mb-3">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-danger">
+                        <h5 class="card-title">Danger card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="border border-info border-3">
+        <h2 id="carousels" class="bg-info text-white text-center p-3 mt-3">Carousels</h2>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/landscape-4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/landscape-5.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/landscape-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <hr class="border border-info border-3">
+        <h2 id="drop-downs" class="bg-info text-white text-center p-3 mt-3">Drop-downs</h2>
+        <p>Any single <code>.btn</code> can be turned into a dropdown toggle with some markup changes. Here’s how you
+            can put them to work with either <code>&lt;button&gt;</code> elements:</p>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">Hello World 1</li>
+                        <li class="dropdown-item">Hello World 2</li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item">Hello World</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="dropup">
+                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropup</button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">Hello World 1</li>
+                        <li class="dropdown-item">Hello World 2</li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item">Hello World</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="dropstart">
+                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropstart</button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">Hello World 1</li>
+                        <li class="dropdown-item">Hello World 2</li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item">Hello World</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="dropend">
+                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropend</button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">Hello World 1</li>
+                        <li class="dropdown-item">Hello World 2</li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item">Hello World</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="mt-3"><code>.dropdown-menu, and .dropdown-item</code> is used to created menu and list items using
+            <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code>.
+        </p>
+        <hr class="border border-info border-3">
+        <h2 id="list-groups" class="bg-info text-white text-center p-3 mt-3">List Groups</h2>
+        <p><code>&lt;ul&gt; & &lt;li&gt;</code> is used to create list and its items using
+            <code>.list-group, .list-items</code>
+        </p>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <p>Normal List</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Item-1</li>
+                    <li class="list-group-item">Item-2</li>
+                    <li class="list-group-item">Item-3</li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <p>Numbered Active Item</p>
+                <ul class="list-group-numbered">
+                    <li class="list-group-item active">Item-1</li>
+                    <li class="list-group-item">Item-2</li>
+                    <li class="list-group-item">Item-3</li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <p>Coloured Disabled Item</p>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary">Item-1</li>
+                    <li class="list-group-item list-group-item-success">Item-2</li>
+                    <li class="list-group-item disabled list-group-item-secondary">Item-3</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="border border-info border-3">
+        <h2 id="modals" class="bg-info text-white text-center p-3 mt-3">Modals</h2>
+        <p>Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or
+            completely custom content.</p>
+        <p><code>.modal, .modal-dialog, .modal-content, .modal-header, .modal-title, .modal-body, .modal-footer</code>
+            classes are used to create modal.</p>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Modal Body
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Launch static backdrop modal
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                It is static backdrop modal and not close unitl close pressed.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#centeredModal">
+                    Launch centered modal
+                </button>
+                <!-- Vertically centered modal -->
+                <div class="modal fade" id="centeredModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Modal Body
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="border border-info border-3">
+        <h2 id="offcanvas_eg" class="bg-info text-white text-center p-3 mt-3">Offcanvas</h2>
+        <p><code>.offcanvas, .offcanvas-header, .offcanvas-title, .offcanvas-body</code> is used to create an offcanvas
+            component (Default : Same position).</p>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample">
+                    Offcanvas Start
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas Start</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            Some text as placeholder. In real life you can have the elements you have chosen. Like,
+                            text, images, lists, etc.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">
+                    Offcanvas Top
+                </button>
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas Top</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            Some text as placeholder. In real life you can have the elements you have chosen. Like,
+                            text, images, lists, etc.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEnd">
+                    Offcanvas End
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEnd">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas End</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            Some text as placeholder. In real life you can have the elements you have chosen. Like,
+                            text, images, lists, etc.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom">
+                    Offcanvas Bottom
+                </button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas Bottom</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            Some text as placeholder. In real life you can have the elements you have chosen. Like,
+                            text, images, lists, etc.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p><code>.offcanvas-start, .offcanvas-top, .offcanvas-end, .offcanvas-bottom</code> is used to position
+            offcanvas component (Default : Same position).</p>
+        <hr class="border border-info border-3">
+        <h2 id="progress" class="bg-info text-white text-center p-3 mt-3">Progress</h2>
+        <p><code>.progress & .progress-bar</code> is used to define progress bar with manual style width used to control
+            progress.</p>
+        <div class="border my-3">
+            <div class="progress my-2">
+                <div class="progress-bar bg-success" style="width: 25%"></div>
+            </div>
+            <div class="progress my-2">
+                <div class="progress-bar progress-bar-animated bg-info" role="progressbar" style="width: 50%"></div>
+            </div>
+            <div class="progress my-2">
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%"></div>
+            </div>
+            <div class="progress my-2">
+                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%"></div>
+            </div>
+        </div>
+        <hr class="border border-info border-3">
+
+        <h2 id="scrollspy" class="bg-info text-white text-center p-3 mt-3">Scrollspy</h2>
+        <div class="row">
+            <div class="col-4">
+                <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example"
+                    tabindex="0" style="height: 200px; overflow-y: scroll;">
+                    <h4 id="list-item-1">Item 1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas natus excepturi assumenda nam
+                        nobis explicabo iste laudantium autem, aspernatur praesentium.</p>
+                    <h4 id="list-item-2">Item 2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, minus quisquam. Quos eaque
+                        asperiores esse beatae quasi dicta minima laudantium?</p>
+                    <h4 id="list-item-3">Item 3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, laborum quasi aliquam voluptas
+                        ipsam sapiente cumque adipisci soluta excepturi laudantium!</p>
+                    <h4 id="list-item-4">Item 4</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur unde sit facilis nulla autem
+                        beatae molestiae eligendi blanditiis non iste.</p>
+                </div>
+            </div>
+        </div>
+        <hr class="border border-info border-3">
+        <h2 id="spinners" class="bg-info text-white text-center p-3 mt-3">Spinners</h2>
+        <p><code>.spinner-border, .spinner-grow</code> is being used to display spinners in bootstrap.</p>
+        <div>
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-secondary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-secondary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <hr class="border border-info border-3">
+        <h2 id="toasts" class="bg-info text-white text-center p-3 mt-3">Toasts</h2>
+        <p><code>.toast, .toast-header, .toast-body</code> are used to create an toast in HTML page.</p>
+        <p>Toasts will automatically hide if you do not specify <code>autohide: false.</code></p>
+        <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div> -->
+        <input type="checkbox" name="check" id="demo">
+        <label for="demo">Toggle Toast</label>
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <!-- <img src="..." class="rounded me-2" alt="..."> -->
+              <strong class="me-auto">Bootstrap</strong>
+              <small class="text-body-secondary">11 mins ago</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Hello, world! This is a toast message.
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Bootstrap</strong>
+                    <small>11 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Hello, world! This is a toast message.
+                </div>
+            </div>
+        </div>
+        <hr class="border border-info border-3">
+        <h2 id="tooltips" class="bg-info text-white text-center p-3 mt-3">Tooltips</h2>
+        <p>Documentation and examples for adding custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations and data-bs-attributes for local title storage.</p>
+        <pre>
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        </pre>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+            Tooltip on top
+          </button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+            Tooltip on right
+          </button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+            Tooltip on bottom
+          </button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on left">
+            Tooltip on left
+          </button>
+        <hr class="border border-info border-3">
+        <div class="row">
             <div class="col text-start">
                 <i class="bi bi-arrow-left fs-3 text-primary"></i>
                 <a href="form_eg.html" class="text-decoration-none">Form Example</a>
             </div>
+            <div class="col text-center">
+                <a href="index.html" class="text-decoration-none"><i class="bi bi-house fs-3 text-primary"></i>Home</a>
+            </div>
             <div class="col text-end">
-                <a href="index.html" class="text-decoration-none">Home<i class="bi bi-house fs-3 text-primary"></i></a>
             </div>
         </div>
         <hr class="border border-info border-3">
+    </div>
 </body>
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+
+    if (toastTrigger) {
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+        toastTrigger.addEventListener('click', () => {
+            toastBootstrap.show()
+        })
+    }
+
+    const demo = document.getElementById("demo")
+    const toastEg = document.getElementsByClassName("toast")
+    const toastInstance = bootstrap.Toast.getOrCreateInstance(toastEg[0])
+
+    if(demo){
+        demo.addEventListener("click",()=>{
+            if(demo.checked){
+                console.log("checked")
+                toastInstance.show()
+            }
+            else{
+                console.log("un-checked")
+                toastInstance.hide()
+            }
+        })
+    }
+
+</script>
 
 </html>
