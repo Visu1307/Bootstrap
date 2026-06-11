@@ -937,6 +937,30 @@
           <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on left">
             Tooltip on left
           </button>
+          <hr class="border border-info border-3">
+          <h2 id="tooltips" class="bg-info text-white text-center p-3 mt-3">Offsets</h2>
+          <p>Offsets are used to put spaces or we can say if we want to skip some columns then we can use offsets.</p>
+          <div class="row border border-2 my-3 p-2">
+              <div class="col-md-4 border border-5">.col-md-4</div>
+              <div class="col-md-4 offset-md-4 border border-5">.col-md-4 .offset-md-4</div>
+            </div>
+            <div class="row border border-2 my-3 p-2">
+              <div class="col-md-3 offset-md-3 border border-5">.col-md-3 .offset-md-3</div>
+              <div class="col-md-3 offset-md-3 border border-5">.col-md-3 .offset-md-3</div>
+            </div>
+            <div class="row border border-2 my-3 p-2">
+              <div class="col-md-6 offset-md-3 border border-5">.col-md-6 .offset-md-3</div>
+            </div>
+            <p>When we want to provide different offsets for different screen sizes then we can use:</p>
+                <div class="row border border-2 my-3 p-2">
+                    <div class="col-sm-5 col-md-6 border border-5">.col-sm-5 .col-md-6</div>
+                    <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 border border-5">.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0</div>
+                </div>
+                <div class="row border border-2 my-3 p-2">
+                    <div class="col-sm-6 col-md-5 col-lg-6 border border-5">.col-sm-6 .col-md-5 .col-lg-6</div>
+                    <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 border border-5">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6
+                        .offset-lg-0</div>
+                </div>
         <hr class="border border-info border-3">
         <div class="row">
             <div class="col text-start">
@@ -949,7 +973,6 @@
             <div class="col text-end">
             </div>
         </div>
-        <hr class="border border-info border-3">
     </div>
 </body>
 <script>
